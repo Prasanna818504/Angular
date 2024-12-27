@@ -1,0 +1,70 @@
+.dashboard {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.menu-icon i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tabs .btn-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.tabs .btn-link.active {
+  color: #007bff;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: blue;
+}
+
+.card h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.card .value {
+  font-size: 24px;
+
+}
+
+.growth {
+  font-size: 14px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
